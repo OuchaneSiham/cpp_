@@ -6,7 +6,7 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/27 14:53:11 by souchane          #+#    #+#             */
-/*   Updated: 2025/04/06 19:18:13 by souchane         ###   ########.fr       */
+/*   Updated: 2025/04/06 19:18:00 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 #include <iostream>
 #include <exception> 
 #include <stdexcept>
-class Form;
 class Bureaucrat
 {
     private:
@@ -33,9 +32,6 @@ class Bureaucrat
 
         void incrGrade();
         void decrGrade();
-        /// for the form class
-        void signForm(Form &form);
-        //7ydy friend;
     class GradeTooHighException: public std::exception
     {
         public:

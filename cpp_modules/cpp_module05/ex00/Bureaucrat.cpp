@@ -6,12 +6,11 @@
 /*   By: souchane <souchane@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/04 17:14:01 by souchane          #+#    #+#             */
-/*   Updated: 2025/04/05 18:17:20 by souchane         ###   ########.fr       */
+/*   Updated: 2025/04/04 20:30:29 by souchane         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Bureaucrat.hpp"
-#include "Form.hpp"
 Bureaucrat::Bureaucrat(): name("Default"), grade(150)
 {
     std::cout << "default constructor called" << std::endl;
@@ -76,17 +75,4 @@ std::ostream& operator<<(std::ostream& out, const Bureaucrat& bureaucrat)
 {
    return(out << bureaucrat.getName() << ", bureaucrat grade " << bureaucrat.getGrade());
     // return out;
-}
-
-void Bureaucrat::signForm(Form &form)
-{
-    try
-    {
-        form.beSigned(*this);
-        std::cout<< name << " signed " << form.getName() << std::endl;
-    }
-    catch(std::exception &e)
-    {
-         std::cout<< name << " could not sign " << form.getName() << " because " << e.what() << std::endl;
-    }
 }

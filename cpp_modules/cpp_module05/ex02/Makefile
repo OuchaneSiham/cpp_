@@ -5,17 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: souchane <souchane@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/04/04 20:21:40 by souchane          #+#    #+#              #
-#    Updated: 2025/04/05 18:12:35 by souchane         ###   ########.fr        #
+#    Created: 2025/04/06 19:14:54 by souchane          #+#    #+#              #
+#    Updated: 2025/04/06 19:15:47 by souchane         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Form
-SRC = main.cpp  Bureaucrat.cpp Form.cpp
+NAME = AForm
+SRC = main.cpp Bureaucrat.cpp AForm.cpp ShrubberyCreationForm.cpp RobotomyRequestForm.cpp PresidentialPardonForm.cpp
 OBJ = $(SRC:.cpp=.o)
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-DEP = Form.hpp Bureaucrat.cpp
+DEP = Bureaucrat.hpp AForm.hpp ShrubberyCreationForm.hpp RobotomyRequestForm.hpp PresidentialPardonForm.hpp
 
 all: $(NAME)
 
